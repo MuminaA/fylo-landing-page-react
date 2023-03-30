@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {   
+  theme: {
     extend: {
       colors: {
         "Very-Dark-Blue": "hsl(243, 87%, 12%)",
@@ -9,15 +9,16 @@ module.exports = {
         "Bright-Blue": "hsl(224, 93%, 58%)",
         "Moderate-Cyan": "hsl(170, 45%, 43%)",
         "Light-Grayish-Blue": "hsl(240, 75%, 98%)",
-        "Light-Gray": "hsl(0, 0%, 75%)"
+        "Light-Gray": "hsl(0, 0%, 75%)",
+      },
+      lineHeight: {
+        '14': '4rem'
       }
-      ,
-      fontFamily: {
-        "headings-CTA": ['Raleway', "sans-serif"],
-        "body": ['Open Sans', "sans-serif"]
-      }
+    },
+    fontFamily: {
+      headings: ["Raleway"],
+      body: ["'Open Sans'"],
     },
   },
   plugins: [],
-}
-
+};
