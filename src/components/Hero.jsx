@@ -3,7 +3,7 @@ import illustration1 from "../assets/illustration-1.svg";
 
 const Hero = () => {
   return (
-    <div className="max-w-[1340px] mx-auto">
+    <div className="max-w-[1340px] mx-auto mb-24">
       <div className="flex justify-between items-center">
         <div className=" flex flex-col gap-4">
           <div>

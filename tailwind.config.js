@@ -13,6 +13,10 @@ module.exports = {
       },
       lineHeight: {
         '14': '4rem'
+      },
+      backgroundImage: {
+        'desktop': "url('./assets/bg-curve-desktop.svg')",
+        'mobile': "url('../assets/bg-curve-mobile.svg')"
       }
     },
     fontFamily: {
