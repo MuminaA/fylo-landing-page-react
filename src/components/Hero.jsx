@@ -42,7 +42,7 @@ const Hero = () => {
           <div className="text-lg flex gap-4 desktop:flex-row mobile:flex-col">
             <div>
               <input
-                id="email"
+                id="email-input"
                 type="email"
                 name="email"
                 placeholder="Enter your email..."

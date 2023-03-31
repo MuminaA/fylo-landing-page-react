@@ -10,7 +10,7 @@ const Testimonial = () => {
       <div className="bg-desktop bg-cover bg-center flex items-center justify-center w-screen py-28">
         <div className="desktop:max-w-[1280px] mx-auto mobile:max-w-[320px] flex desktop:flex-row mobile:flex-col items-center gap-5">
           <div className="desktop:hidden mobile:block mobile:pb-10">
-            <img src={illustration2} />
+            <img src={illustration2} alt="" />
           </div>
           <div className="flex flex-col gap-4">
             <div>
@@ -32,7 +32,7 @@ const Testimonial = () => {
               </p>
             </div>
             <div className="desktop:text-left mobile:text-center ">
-              <a href="#" className="">
+              <a href="#">
                 <p className="inline-block pe-2 underline underline-offset-8 decoration-Moderate-Cyan text-Moderate-Cyan hover:text-Bright-Cyan">
                   See how Fylo works
                 </p>
@@ -68,7 +68,7 @@ const Testimonial = () => {
           </div>
           </div>
           <div className="desktop:block mobile:hidden">
-            <img src={illustration2} />
+            <img src={illustration2} alt="" />
           </div>
         </div>
       </div>

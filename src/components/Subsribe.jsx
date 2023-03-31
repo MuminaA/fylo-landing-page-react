@@ -39,7 +39,7 @@ const Subscibe = () => {
         <div className="flex flex-col gap-3">
           <div>
             <input
-            id='email'
+            id='email-input'
             type="email"
             name="email"
             placeholder="email@example.com" 
