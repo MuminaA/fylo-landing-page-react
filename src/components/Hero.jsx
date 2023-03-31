@@ -42,14 +42,14 @@ const Hero = () => {
           <div className="text-lg flex gap-4 desktop:flex-row mobile:flex-col">
             <div>
               <input
-                id="email-input"
+                id="email"
                 type="email"
                 name="email"
                 placeholder="Enter your email..."
                 className={`border rounded-sm ps-4 pe-24 py-2 ${error ? 'border-red-500' : 'border-black'}`}
                 onChange={handleChange}
               />
-              <p id="email-error" className="text-red-600">{error}</p>
+              <p id="error" className="text-red-600">{error}</p>
             </div>
             <div>
               <button
