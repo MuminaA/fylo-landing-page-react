@@ -18,7 +18,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="text-lg flex gap-6">
-            <input type="text" placeholder="Enter your email..." className="border border-black rounded-sm ps-4 pe-24 py-2"/>
+            <input type="email" placeholder="Enter your email..." className="border border-black rounded-sm ps-4 pe-24 py-2"/>
             <button className="bg-Bright-Blue text-white px-14 rounded">Get Started</button>
           </div>
         </div>

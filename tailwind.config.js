@@ -24,6 +24,7 @@ module.exports = {
       body: ["'Open Sans'"],
     },
     fontSize: {
+      '3xl': '1.9rem',
       '4xl': "2.7rem"
     }
   },
