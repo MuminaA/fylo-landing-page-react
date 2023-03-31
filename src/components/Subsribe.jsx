@@ -1,6 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Subscibe = () => {
+
+  const [email, setEmail] = useState("");
+    const [error, setError] = useState("");
+
+    const handleChange = (e) => {
+      setEmail(e.target.value);
+    };
+
+    const handleClick = () => {
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!regex.test(email)) {
+        setError("Please enter a valid email address");
+      } else {
+        setError("");
+        // console.log("vaild email")
+      }
+
+  }
+
   return (
     <div className="text-white bg-Desaturated-Blue desktop:p-20 mobile:py-20">
       <div className="desktop:max-w-[1280px] mx-auto mobile:max-w-[320px] flex desktop:flex-row mobile:flex-col mobile:gap-6 justify-between items-center ">
@@ -18,10 +38,22 @@ const Subscibe = () => {
         </div>
         <div className="flex flex-col gap-3">
           <div>
-            <input type="email" placeholder="email@example.com" className="ps-5 desktop:pe-80 mobile:pe-16 py-2 rounded-sm shadow-lg"/>
+            <input
+            id='email'
+            type="email"
+            name="email"
+            placeholder="email@example.com" 
+            className={`ps-5 desktop:pe-80 mobile:pe-16 py-2 rounded-sm shadow-lg text-black border ${error ? 'border-red-500': ''}`}
+            onChange={handleChange}  
+            />
+            <p id="error" className="text-white-600">{error}</p>
           </div>
           <div>
-            <button className="bg-Bright-Blue text-white desktop:px-9 mobile:px-16 py-2 rounded shadow-md hover:bg-Button-Overlay">Get Started For Free</button>
+            <button 
+            type="button" 
+            className="bg-Bright-Blue text-white desktop:px-9 mobile:px-16 py-2 rounded shadow-md hover:bg-Button-Overlay"
+            onClick={handleClick}>Get Started For Free
+            </button>
           </div>
         </div>
       </div>
