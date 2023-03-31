@@ -7,11 +7,14 @@ import avatar from "../assets/avatar-testimonial.jpg";
 const Testimonial = () => {
   return (
     <div className="w-full h-full mx-auto">
-    <div className="bg-desktop bg-cover bg-center flex items-center justify-center w-screen p-28">
-        <div className="max-w-[1340px] mx-auto flex flex-cols justify-between items-center gap-5">
+      <div className="bg-desktop bg-cover bg-center flex items-center justify-center w-screen py-28">
+        <div className="desktop:max-w-[1280px] mx-auto mobile:max-w-[320px] flex desktop:flex-row mobile:flex-col items-center gap-5">
+          <div className="desktop:hidden mobile:block mobile:pb-10">
+            <img src={illustration2} />
+          </div>
           <div className="flex flex-col gap-4">
             <div>
-              <h1 className="text-4xl font-semibold font-headings whitespace-pre text-Very-Dark-Blue">
+              <h1 className="desktop:text-4xl mobile:text-center font-semibold font-headings whitespace-pre text-Very-Dark-Blue">
                 Stay productive, wherever you are
               </h1>
             </div>
@@ -28,7 +31,7 @@ const Testimonial = () => {
                 required!
               </p>
             </div>
-            <div>
+            <div className="desktop:text-left mobile:text-center">
               <a href="#" className="">
                 <p className="inline-block pe-2 underline underline-offset-8 decoration-Moderate-Cyan text-Moderate-Cyan">
                   See how Fylo works
@@ -40,11 +43,12 @@ const Testimonial = () => {
                 ></img>
               </a>
             </div>
-            <div class="bg-white p-7 max-w-[370px] rounded-lg flex flex-col gap-2 mt-5 shadow-md">
+            <div className="flex desktop:justify-start mobile:justify-center mobile:items-center">
+            <div class="bg-white p-7 desktop:max-w-[370px] mobile:max-w-[300px] rounded-lg flex flex-col gap-2 mt-5 shadow-md">
               <div>
                 <img src={quote} alt="" />
               </div>
-              <div className=" text-Very-Dark-Blue">
+              <div className=" text-Very-Dark-Blue desktop:text-base mobile:text-sm">
                 <p>
                   Fylo has improved our team productivity by an order of
                   magnitude. Since making the switch our team has become a
@@ -53,16 +57,17 @@ const Testimonial = () => {
               </div>
               <div className="flex items-center gap-3">
                 <div>
-                  <img src={avatar} alt="" className="rounded-full w-12 h-12"/>
+                  <img src={avatar} alt="" className="rounded-full desktop:w-12 desktop:h-12 mobile:w-10 mobile:h-10" />
                 </div>
-                <div className="text-Very-Dark-Blue">
+                <div className="text-Very-Dark-Blue desktop:text-base mobile:text-sm">
                   <p className="font-bold">Kyle Burton</p>
                   <p>Founder & CEO, Huddle</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="p-8">
+          </div>
+          <div className="desktop:block mobile:hidden">
             <img src={illustration2} />
           </div>
         </div>

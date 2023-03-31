@@ -7,12 +7,12 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="bg-Very-Dark-Blue text-Light-Gray p-24">
-    <div className="max-w-[1340px] mx-auto flex flex-col gap-5">
-      <div>
+    <div className="bg-Very-Dark-Blue text-Light-Gray desktop:p-24 mobile:py-16">
+    <div className="desktop:max-w-[1280px] mx-auto mobile:max-w-[320px] flex flex-col gap-5">
+      <div> 
         <img src={logo} alt="logo"></img>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between desktop:flex-row mobile:flex-col mobile:gap-9">
         <div className="flex flex-col gap-4">
           <div className="flex gap-4 items-center">
             <img src={phone} alt="phone"/>
@@ -39,7 +39,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 mobile:place-content-center">
             <li className="border rounded-full p-1"><RiFacebookFill /></li>
             <li className="border rounded-full p-1"><RiTwitterFill /></li>
             <li className="border rounded-full p-1"><AiOutlineInstagram /></li>
@@ -48,6 +48,8 @@ const Footer = () => {
       </div>
       </div>
     </div>
+
+    
   );
 };
 

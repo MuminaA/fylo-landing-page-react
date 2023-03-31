@@ -24,9 +24,15 @@ module.exports = {
       body: ["'Open Sans'"],
     },
     fontSize: {
-      '3xl': '1.9rem',
+      'sm': ".7rem",
+      'base': '1rem',
+      '3xl': '1.5rem',
       '4xl': "2.7rem"
-    }
+    },
+    screens: {
+      'mobile': '375px',
+      'desktop': '1024px'
+    },
   },
   plugins: [],
 };

@@ -3,13 +3,13 @@ import logo from "../assets/logo.svg"
 
 const Navbar = () => {
   return (
-    <div className="max-w-[1340px] mx-auto items-center  py-11">
+    <div className="desktop:max-w-[1280px] mx-auto py-11 mobile:max-w-[320px]">
       <div className="flex justify-between items-center">
-        <div>
-          <img src={logo} alt="logo" />
+        <div className="desktop:w-9/12 mobile:w-20">
+          <img src={logo} alt="logo" className=""/>
         </div>
         <div >
-          <ul className="flex gap-7 text-Very-Dark-Blue">
+          <ul className="flex desktop:gap-7 mobile:gap-3 text-Very-Dark-Blue">
             <li>Features</li>
             <li>Team</li>
             <li>Sign in</li>
