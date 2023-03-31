@@ -46,7 +46,7 @@ const Subscibe = () => {
             className={`ps-5 desktop:pe-80 mobile:pe-16 py-2 rounded-sm shadow-lg text-black border ${error ? 'border-red-500': ''}`}
             onChange={handleChange}  
             />
-            <p id="error" className="text-white-600">{error}</p>
+            <p id="emil-error" className="text-white-600">{error}</p>
           </div>
           <div>
             <button 

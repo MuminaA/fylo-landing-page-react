@@ -49,7 +49,7 @@ const Hero = () => {
                 className={`border rounded-sm ps-4 pe-24 py-2 ${error ? 'border-red-500' : 'border-black'}`}
                 onChange={handleChange}
               />
-              <p id="error" className="text-red-600">{error}</p>
+              <p id="email-error" className="text-red-600">{error}</p>
             </div>
             <div>
               <button
