@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+## Table of contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-## Available Scripts
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-In the project directory, you can run:
+### The challenge
 
-### `npm start`
+Users should be able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Links
 
-### `npm test`
+- Solution URL: [Add solution URL here](https://github.com/gitname/react-gh-pages)
+- Live Site URL: [Add live site URL here](https://muminaa.github.io/fylo-landing-page-react/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built with
 
-### `npm run build`
+- TailwindCSS
+- [React](https://reactjs.org/) - JS library
+- [React Icons](https://muminaa.github.io/fylo-landing-page-react/) - For icons
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### What I learned
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+How to use react better and the use of components and useState
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To see how you can add code snippets, see below:
 
-### `npm run eject`
+```JS
+    const [email, setEmail] = useState("");
+    const [error, setError] = useState("");
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    const handleChange = (e) => {
+      setEmail(e.target.value);
+    };
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    const handleClick = () => {
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+      if (!regex.test(email)) {
+        setError("Please enter a valid email address");
+      } else {
+        setError("");
+        // console.log("vaild email")
+      }
+  }
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Continued development
 
-## Learn More
+I want to continue focusing on the use of components and useState
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Mumina Abdi](http://muminaabdi.com/)
+- Frontend Mentor - [@MuminaA](https://www.frontendmentor.io/profile/MuminaA)
