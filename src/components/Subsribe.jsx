@@ -21,7 +21,7 @@ const Subscibe = () => {
             <input type="email" placeholder="email@example.com" className="ps-5 desktop:pe-80 mobile:pe-16 py-2 rounded-sm shadow-lg"/>
           </div>
           <div>
-            <button className="bg-Bright-Blue text-white desktop:px-9 mobile:px-16 py-2 rounded shadow-md">Get Started For Free</button>
+            <button className="bg-Bright-Blue text-white desktop:px-9 mobile:px-16 py-2 rounded shadow-md hover:bg-Button-Overlay">Get Started For Free</button>
           </div>
         </div>
       </div>

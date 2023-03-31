@@ -31,13 +31,13 @@ const Testimonial = () => {
                 required!
               </p>
             </div>
-            <div className="desktop:text-left mobile:text-center">
+            <div className="desktop:text-left mobile:text-center ">
               <a href="#" className="">
-                <p className="inline-block pe-2 underline underline-offset-8 decoration-Moderate-Cyan text-Moderate-Cyan">
+                <p className="inline-block pe-2 underline underline-offset-8 decoration-Moderate-Cyan text-Moderate-Cyan hover:text-Bright-Cyan">
                   See how Fylo works
                 </p>
                 <img
-                  className="inline-block underline underline-offset-8 decoration-Moderate-Cyan"
+                  className="inline-block underline underline-offset-8 decoration-Moderate-Cyan hover:text-Bright-Cyan"
                   src={arrow}
                   alt=""
                 ></img>

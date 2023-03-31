@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg {
+    background-color: hsl(170, 47%, 51%);
+}

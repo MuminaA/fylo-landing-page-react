@@ -10,9 +10,9 @@ const Navbar = () => {
         </div>
         <div >
           <ul className="flex desktop:gap-7 mobile:gap-3 text-Very-Dark-Blue">
-            <li>Features</li>
-            <li>Team</li>
-            <li>Sign in</li>
+            <li className="cursor-pointer">Features</li>
+            <li className="cursor-pointer">Team</li>
+            <li className="cursor-pointer">Sign in</li>
           </ul>
         </div>
       </div>

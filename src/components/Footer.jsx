@@ -25,24 +25,24 @@ const Footer = () => {
         </div>
         <div>
           <ul className="flex flex-col gap-2">
-            <li className="cursor-pointer">About Us</li>
-            <li className="cursor-pointer">Jobs</li>
-            <li className="cursor-pointer">Press</li>
-            <li className="cursor-pointer">Blog</li>
+            <li className="cursor-pointer hover:text-Desaturated-Blue">About Us</li>
+            <li className="cursor-pointer hover:text-Desaturated-Blue">Jobs</li>
+            <li className="cursor-pointer hover:text-Desaturated-Blue">Press</li>
+            <li className="cursor-pointer hover:text-Desaturated-Blue">Blog</li>
           </ul>
         </div>
         <div>
           <ul className="flex flex-col gap-2">
-            <li className="cursor-pointer">Contact Us</li>
-            <li className="cursor-pointer">Terms</li>
-            <li className="cursor-pointer">Privacy</li>
+            <li className="cursor-pointer hover:text-Desaturated-Blue">Contact Us</li>
+            <li className="cursor-pointer hover:text-Desaturated-Blue">Terms</li>
+            <li className="cursor-pointer hover:text-Desaturated-Blue">Privacy</li>
           </ul>
         </div>
         <div>
           <ul className="flex gap-4 mobile:place-content-center">
-            <li className="border rounded-full p-1"><RiFacebookFill /></li>
-            <li className="border rounded-full p-1"><RiTwitterFill /></li>
-            <li className="border rounded-full p-1"><AiOutlineInstagram /></li>
+            <li className="border rounded-full p-1 hover:text-Bright-Blue hover:border-Bright-Blue"><RiFacebookFill /></li>
+            <li className="border rounded-full p-1 hover:text-Bright-Blue hover:border-Bright-Blue"><RiTwitterFill /></li>
+            <li className="border rounded-full p-1 hover:text-Bright-Blue hover:border-Bright-Blue"><AiOutlineInstagram /></li>
           </ul>
         </div>
       </div>

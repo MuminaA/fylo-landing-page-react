@@ -10,6 +10,8 @@ module.exports = {
         "Moderate-Cyan": "hsl(170, 45%, 43%)",
         "Light-Grayish-Blue": "hsl(240, 75%, 98%)",
         "Light-Gray": "hsl(0, 0%, 75%)",
+        'Button-Overlay': 'hsl(224, 92%, 65%)',
+        'Bright-Cyan': 'hsl(170, 47%, 51%)'
       },
       lineHeight: {
         '14': '4rem'
