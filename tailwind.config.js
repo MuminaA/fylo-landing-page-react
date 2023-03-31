@@ -23,6 +23,9 @@ module.exports = {
       headings: ["Raleway"],
       body: ["'Open Sans'"],
     },
+    fontSize: {
+      '4xl': "2.7rem"
+    }
   },
   plugins: [],
 };
